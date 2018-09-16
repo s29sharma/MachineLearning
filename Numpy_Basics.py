@@ -3,6 +3,10 @@
 import math
 import numpy as np
 
+# GRADED FUNCTION: basic_sigmoid
+
+import math
+
 
 def basic_sigmoid(x):
     """
@@ -16,7 +20,7 @@ def basic_sigmoid(x):
     """
 
     ### START CODE HERE ### (≈ 1 line of code)
-    s = math.exp(x)
+    s = 1 / (1 + math.exp(-x))
     ### END CODE HERE ###
 
     return s
@@ -41,6 +45,9 @@ print (x + 3)
 
 import numpy as np  # this means you can access numpy functions by writing np.function() instead of numpy.function()
 
+# GRADED FUNCTION: sigmoid
+ # this means you can access numpy functions by writing np.function() instead of numpy.function()
+
 
 def sigmoid(x):
     """
@@ -54,7 +61,7 @@ def sigmoid(x):
     """
 
     ### START CODE HERE ### (≈ 1 line of code)
-    s = np.exp(x)
+    s = 1 / (1 + np.exp(-x))
     ### END CODE HERE ###
 
     return s
@@ -63,6 +70,8 @@ def sigmoid(x):
 x = np.array([1, 2, 3])
 sigmoid(x)
 
+
+# GRADED FUNCTION: sigmoid_derivative
 
 # GRADED FUNCTION: sigmoid_derivative
 
